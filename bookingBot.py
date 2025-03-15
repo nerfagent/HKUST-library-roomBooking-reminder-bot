@@ -10,7 +10,7 @@ def get_data(file_path):
     return data
 
 # debug_data function
-def debug_data(TOKEN, CHANNEL_ID, USER_DICT, BOOKING_DICT, TAG_RESET, message0, message1, emoji_id):
+def debug_data(TOKEN, CHANNEL_ID, USER_DICT, BOOKING_DICT, TAG_RESET, message0, message1, emoji_id, debug_user_id):
     print('TOKEN:', TOKEN)
     print('CHANNEL_ID:', CHANNEL_ID)
     print('USER_DICT:', USER_DICT)
@@ -19,6 +19,7 @@ def debug_data(TOKEN, CHANNEL_ID, USER_DICT, BOOKING_DICT, TAG_RESET, message0, 
     print('message0:', message0)
     print('message1:', message1)
     print('emoji_id:', emoji_id)
+    print('debug_user_id:', debug_user_id)
 
 # set up the bot
 def setup_bot():
@@ -42,13 +43,14 @@ if __name__ == '__main__':
     message0 = data["MESSAGE0"]
     message1 = data["MESSAGE1"]
     emoji_id = data["EMOJI_ID"]
+    debug_user_id = data["DEBUG_USER_ID"]
 
     # 
     # 
     # 
     debug_testingMode = data["DEBUG_TESTING_MODE"]
     if debug_testingMode:
-        debug_data(TOKEN, CHANNEL_ID, USER_DICT, BOOKING_DICT, TAG_RESET, message0, message1, emoji_id)
+        debug_data(TOKEN, CHANNEL_ID, USER_DICT, BOOKING_DICT, TAG_RESET, message0, message1, emoji_id, debug_user_id)
     # 
     # 
     # 
@@ -73,7 +75,7 @@ if __name__ == '__main__':
             if channel == None:
                 print("Channel not found.")
                 return
-            member = channel.guild.get_member(12345) # put your dc user id here
+            member = channel.guild.get_member(debug_user_id) # put your dc user id here
             if channel:
                 await channel.send(f"testing!")
                 await channel.send(f"see if i can {member.mention} here")
