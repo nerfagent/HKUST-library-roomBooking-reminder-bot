@@ -9,6 +9,7 @@
         "_" : 0,
         "_comment" : "please dont delete this line and _"
     },
+    "room_name" : [ "1-350", "_comment : room name" ],
     "BOOKING_DICT" : {
         "_comment" : ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         "00" : ["_", "_", "_", "_", "_", "_", "_"],
@@ -68,4 +69,40 @@
     "MESSAGE1" : "change 2nd message if you want",
     "EMOJI_ID" : 0,
     "DEBUG_TESTING_MODE" : 0
+
+    "ROOMS_ID" : { 
+        "1-350" : 126,
+        "1-351" : 28,
+        "1-352" : 11,
+        "lg1-327" : 90,
+        "lg1-353" : 91,
+        "lg1-354" : 43,
+        "lg1-355" : 37,
+        "lg1-361" : 89,
+        "lg1-362" : 29,
+        "lg1-363" : 12,
+        "lg3 seminar" : 25,
+        "lg3-04" : 93,
+        "lg3-05" : 95,
+        "lg3-08" : 94,
+        "lg3-15" : 13,
+        "lg3-16" : 14,
+        "lg3-17" : 15,
+        "lg3-27" : 44,
+        "lg4-02" : 92,
+        "lg4-04" : 39,
+        "lg4-05" : 40,
+        "lg4-07" : 30,
+        "lg4-08" : 31,
+        "lg4-09" : 32,
+        "lg4-14" : 16,
+        "lg4-15" : 17,
+        "lg4-16" : 18,
+        "lg4-17" : 76,
+        "lg4-27" : 45,
+        "lg5-01" : 127,
+        "lg5-02" : 128,
+        "lg5-03" : 129,
+        "_comment" : "current version can only book group study rooms"
+    }
 }
