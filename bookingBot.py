@@ -107,7 +107,7 @@ if __name__ == '__main__':
                                 await channel.send(f"{message1}")
                                 if emoji_id:
                                     await channel.send(f"{bot.get_emoji(emoji_id)}")
-                                TAG_RESET[now.hour] = 0
+                                TAG_RESET[now_hour] = 0
                         else:
                             print("Channel not found.")
             else:
