@@ -13,3 +13,7 @@ If you and your friends need a study room every weekday, you can use this Discor
 pip install discord
 ```
 10. run your bookingBot.py 24/7, or you can start it on every morning and stop it at night
+# Booking Link
+You will notice that two links are sent simultaneously. The first link is from the Usthing website, allowing you to book a room two hours earlier than the library link. However, the trade-off is that this link does not take you directly to your desired room; you will need to search for it manually. Additionally, there can occasionally be a glitch where the link fails to allow bookings for dates 14 days in advance. In such cases, you'll need to click the link again to access that option.
+
+On the other hand, the second link, provided by the library, guarantees direct access to the specific date and time you wish to book. The drawback, however, is that you must wait two hours before you can reserve a room for a date 14 days from now.
